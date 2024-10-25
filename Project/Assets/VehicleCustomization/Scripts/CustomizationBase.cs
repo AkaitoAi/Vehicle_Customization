@@ -11,7 +11,8 @@ namespace AkaitoAi.Customization
         Wheel,
         Rim,
         Spoiler,
-        Flag
+        Flag,
+        RimColor
     }
 
     public struct Actions

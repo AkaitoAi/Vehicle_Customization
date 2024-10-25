@@ -7,10 +7,10 @@ namespace AkaitoAi.Customization
     {
         [SerializeField] private Transform wheelContainerTransform;
 
-        // private void Update()
-        // {
-        //     Customize(CustomizationData.itemID);
-        // }
+         private void Update()
+         {
+             Customize(CustomizationData.itemID);
+         }
 
         protected override void Customize(int itemID)
         {     
