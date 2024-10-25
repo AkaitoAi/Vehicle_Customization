@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace AkaitoAi.Customization
@@ -19,6 +17,11 @@ namespace AkaitoAi.Customization
 
             base.Customize(itemID);
 
+            if(meshRenderers == null || colors == null)
+            {
+                Debug.Log("MeshRenderers or colors not set.");
+                return;
+            }
 
             if (itemID >= CustomizationData.status.Length
                 || itemID < 0)
@@ -28,7 +31,13 @@ namespace AkaitoAi.Customization
                 return;
             }
 
+            colors = new Color[CustomizationData.status.Length];
             
+            foreach(MeshRenderer meshRenderer in meshRenderers)
+            {
+                meshRenderer.material.color = colors[itemID];
+            }
+
         }
     }
 }
