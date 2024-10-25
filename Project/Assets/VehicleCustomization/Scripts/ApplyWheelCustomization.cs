@@ -25,7 +25,7 @@ namespace AkaitoAi.Customization
                 return;
             }
 
-            if (itemID > CustomizationData.status.Length 
+            if (itemID >= CustomizationData.status.Length 
                 || itemID < 0)
             {
                 Debug.Log("itemID is out of range.");
