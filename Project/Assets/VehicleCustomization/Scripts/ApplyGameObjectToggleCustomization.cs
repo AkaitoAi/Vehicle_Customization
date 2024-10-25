@@ -19,7 +19,7 @@ namespace AkaitoAi.Customization
 
             if (containerTransform == null)
             {
-                Debug.Log("Wheel container not set");
+                Debug.Log("Container not set");
                 
                 return;
             }

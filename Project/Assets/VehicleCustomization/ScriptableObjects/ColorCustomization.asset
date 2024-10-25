@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c09d93cd793bbad44b8c1c5eb7be0a49, type: 3}
-  m_Name: WheelCustomization
+  m_Name: ColorCustomization
   m_EditorClassIdentifier: 
-  type: 4
-  itemID: 1
+  type: 0
+  itemID: 0
   status:
   - isUnlocked: 1
     price: 0
@@ -24,5 +24,5 @@ MonoBehaviour:
   - isUnlocked: 0
     price: 0
   Prefs:
-    selected: SelectedCustomWheel
-    unLocked: UnlockdCustomWheel
+    selected: SelectedCustomColor
+    unLocked: UnlockdCustomColor

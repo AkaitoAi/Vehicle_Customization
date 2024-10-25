@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SpoilerCustomization
   m_EditorClassIdentifier: 
   type: 6
-  itemID: 1
+  itemID: 3
   status:
   - isUnlocked: 1
     price: 0
