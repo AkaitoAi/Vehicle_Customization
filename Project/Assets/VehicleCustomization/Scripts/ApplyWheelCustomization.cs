@@ -17,9 +17,22 @@ namespace AkaitoAi.Customization
             if (!CanCustomize()) return;
 
             base.Customize(itemID);
-            
-            if(wheelContainerTransform == null) return;
-            
+
+            if (wheelContainerTransform == null)
+            {
+                Debug.Log("Wheel container not set");
+                
+                return;
+            }
+
+            if (itemID > CustomizationData.status.Length 
+                || itemID < 0)
+            {
+                Debug.Log("itemID is out of range.");
+                
+                return;
+            }
+
             int wheelSlotCount = wheelContainerTransform.childCount;
             int wheelTypeCount = CustomizationData.status.Length;
             int totalWheels = wheelSlotCount * wheelTypeCount;
