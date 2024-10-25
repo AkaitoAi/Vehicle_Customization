@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace AkaitoAi.Customization
@@ -6,26 +7,30 @@ namespace AkaitoAi.Customization
     {
         [SerializeField] private Transform wheelContainerTransform;
 
+        // private void Update()
+        // {
+        //     Customize(CustomizationData.itemID);
+        // }
+
         protected override void Customize(int itemID)
-        {
+        {     
             if (!CanCustomize()) return;
 
             base.Customize(itemID);
+            
+            if(wheelContainerTransform == null) return;
+            
+            int wheelSlotCount = wheelContainerTransform.childCount;
+            int wheelTypeCount = CustomizationData.status.Length;
+            int totalWheels = wheelSlotCount * wheelTypeCount;
 
-            int rimSlotCount = wheelContainerTransform.transform.childCount;
-            int totalRims = rimSlotCount * CustomizationData.status.Length;
+            Transform wheelsTransform = wheelContainerTransform;
 
-            // Cache the wheels transform
-            Transform wheelsTransform = wheelContainerTransform.transform;
-
-            // Single loop to deactivate all rims except the selected one
-            for (int i = 0; i < totalRims; i++)
+            for (int i = 0; i < totalWheels; i++)
             {
-                Transform rimSlot = wheelsTransform.GetChild(i / CustomizationData.status.Length);
-                GameObject rim = rimSlot.GetChild(i % CustomizationData.status.Length).gameObject;
-
-                // Set active state based on whether this is the selected rim
-                rim.SetActive(i % CustomizationData.status.Length == itemID);
+                Transform wheelSlot = wheelsTransform.GetChild(i / wheelTypeCount);
+                GameObject wheel = wheelSlot.GetChild(i % wheelTypeCount).gameObject;
+                wheel.SetActive(i % wheelTypeCount == itemID);
             }
         }
     }
