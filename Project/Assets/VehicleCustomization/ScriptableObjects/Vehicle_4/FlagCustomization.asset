@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlagCustomization
   m_EditorClassIdentifier: 
   type: 7
-  itemID: 2
+  itemID: 0
   status:
   - isUnlocked: 1
     price: 0

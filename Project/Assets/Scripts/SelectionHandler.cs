@@ -1,18 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectionHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject[] objs;
+    [SerializeField] private Button increment, decrement;
+
+    private int currentIndex;
+
+    public static event Action<int> OnCurrentIndexUpdate;
+    
+    private void Start()
     {
-        
+        DisableAllObjs();
+        objs[currentIndex].SetActive(true);
+
+        decrement.onClick.AddListener(OnDecrementButton);
+        increment.onClick.AddListener(OnIncrementButton);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void DisableAllObjs()
     {
+        foreach (GameObject obj in objs)
+            obj.SetActive(false);
+    }
+
+    private void OnIncrementButton()
+    {
+        DisableAllObjs();
+
+        currentIndex++;
+
+        if (currentIndex > objs.Length - 1)
+            currentIndex = 0;
         
+        objs[currentIndex].SetActive(true);
+        
+        OnCurrentIndexUpdate?.Invoke(currentIndex);
+    }
+
+    private void OnDecrementButton()
+    {
+        DisableAllObjs();
+
+        currentIndex--;
+
+        if (currentIndex <= 0)
+            currentIndex = objs.Length - 1;
+        
+        objs[currentIndex].SetActive(true);
+        
+        OnCurrentIndexUpdate?.Invoke(currentIndex);
     }
 }

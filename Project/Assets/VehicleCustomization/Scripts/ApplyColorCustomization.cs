@@ -31,7 +31,7 @@ namespace AkaitoAi.Customization
                 return;
             }
 
-            colors = new Color[CustomizationData.status.Length];
+            //colors = new Color[CustomizationData.status.Length];
             
             foreach(MeshRenderer meshRenderer in meshRenderers)
             {

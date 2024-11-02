@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ColorCustomization
   m_EditorClassIdentifier: 
   type: 0
-  itemID: 2
+  itemID: 0
   status:
   - isUnlocked: 1
     price: 0
