@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09d93cd793bbad44b8c1c5eb7be0a49, type: 3}
   m_Name: WheelCustomization
   m_EditorClassIdentifier: 
+  id: 1
   type: 4
   itemID: 0
   status:
