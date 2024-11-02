@@ -2,55 +2,58 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SelectionHandler : MonoBehaviour
+namespace AkaitoAi.Customization
 {
-    [SerializeField] private GameObject[] objs;
-    [SerializeField] private Button increment, decrement;
-
-    private int currentIndex;
-
-    public static event Action<int> OnCurrentIndexUpdate;
-    
-    private void Start()
+    public class SelectionHandler : MonoBehaviour
     {
-        DisableAllObjs();
-        objs[currentIndex].SetActive(true);
+        [SerializeField] private GameObject[] objs;
+        [SerializeField] private Button increment, decrement;
 
-        decrement.onClick.AddListener(OnDecrementButton);
-        increment.onClick.AddListener(OnIncrementButton);
-    }
+        private int currentIndex;
 
-    private void DisableAllObjs()
-    {
-        foreach (GameObject obj in objs)
-            obj.SetActive(false);
-    }
+        public static event Action<int> OnCurrentIndexUpdate;
 
-    private void OnIncrementButton()
-    {
-        DisableAllObjs();
+        private void Start()
+        {
+            DisableAllObjs();
+            objs[currentIndex].SetActive(true);
 
-        currentIndex++;
+            decrement.onClick.AddListener(OnDecrementButton);
+            increment.onClick.AddListener(OnIncrementButton);
+        }
 
-        if (currentIndex > objs.Length - 1)
-            currentIndex = 0;
-        
-        objs[currentIndex].SetActive(true);
-        
-        OnCurrentIndexUpdate?.Invoke(currentIndex);
-    }
+        private void DisableAllObjs()
+        {
+            foreach (GameObject obj in objs)
+                obj.SetActive(false);
+        }
 
-    private void OnDecrementButton()
-    {
-        DisableAllObjs();
+        private void OnIncrementButton()
+        {
+            DisableAllObjs();
 
-        currentIndex--;
+            currentIndex++;
 
-        if (currentIndex <= 0)
-            currentIndex = objs.Length - 1;
-        
-        objs[currentIndex].SetActive(true);
-        
-        OnCurrentIndexUpdate?.Invoke(currentIndex);
+            if (currentIndex > objs.Length - 1)
+                currentIndex = 0;
+
+            objs[currentIndex].SetActive(true);
+
+            OnCurrentIndexUpdate?.Invoke(currentIndex);
+        }
+
+        private void OnDecrementButton()
+        {
+            DisableAllObjs();
+
+            currentIndex--;
+
+            if (currentIndex <= 0)
+                currentIndex = objs.Length - 1;
+
+            objs[currentIndex].SetActive(true);
+
+            OnCurrentIndexUpdate?.Invoke(currentIndex);
+        }
     }
 }
