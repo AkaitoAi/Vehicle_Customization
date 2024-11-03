@@ -37,6 +37,9 @@ namespace AkaitoAi.Customization
                 ui.panel.SetActive(false);
             
             customizationPanels[index].panel.SetActive(true);
+            
+            if(customizationPanels[index].customizationData != null)
+                customizationPanels[index].customizationData.Actions.OnEntered?.Invoke();
         }
 
         private void AddIndexToButtons()
@@ -65,7 +68,7 @@ namespace AkaitoAi.Customization
         {
             switch (index)
             {
-                case 0: 
+                case 0:
                     TogglePanel(1);
                     break;
                 
