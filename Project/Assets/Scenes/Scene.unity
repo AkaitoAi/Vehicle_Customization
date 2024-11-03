@@ -2567,11 +2567,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &972739710 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1401961555194026017, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}
-  m_PrefabInstance: {fileID: 1401961556163611743}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1018105018 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6582746853823338772, guid: 493c80ca893f6554c9bf6db3afd86eb1, type: 3}
@@ -5635,10 +5630,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950510598}
     m_Modifications:
-    - target: {fileID: 1401961555194026019, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}
-      propertyPath: meshRenderers.Array.data[0]
-      value: 
-      objectReference: {fileID: 972739710}
     - target: {fileID: 5851911293178240110, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5686,10 +5677,6 @@ PrefabInstance:
     - target: {fileID: 5851911293178240111, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}
       propertyPath: m_Name
       value: Vehicle_4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5851911293178240111, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c80a358a9b565745b20d08358ceaa71, type: 3}

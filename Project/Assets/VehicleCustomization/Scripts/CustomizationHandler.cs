@@ -116,7 +116,8 @@ namespace AkaitoAi.Customization
                     {
                         customizationPanels[i].customizationData = customizationDatas[dataIndex].data[i - 1];
 
-                        customizationDatas[dataIndex].data[i - 1].Actions.OnItemIDChanged?.Invoke(0);
+                        customizationDatas[dataIndex].data[i - 1].Actions.OnItemIDChanged?.
+                            Invoke(customizationDatas[dataIndex].data[i - 1].itemID);
                     }
                     else
                     {
