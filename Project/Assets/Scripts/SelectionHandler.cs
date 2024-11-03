@@ -17,7 +17,8 @@ namespace AkaitoAi.Customization
         {
             DisableAllObjs();
             objs[currentIndex].SetActive(true);
-
+            OnCurrentIndexUpdate?.Invoke(currentIndex);
+            
             decrement.onClick.AddListener(OnDecrementButton);
             increment.onClick.AddListener(OnIncrementButton);
         }

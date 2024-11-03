@@ -2157,6 +2157,27 @@ MonoBehaviour:
     - {fileID: 1978961812}
     - {fileID: 2043463327}
     - {fileID: 699599413}
+  customizationDatas:
+  - data:
+    - {fileID: 11400000, guid: d93e72152680f474cb61cd337b5d6c36, type: 2}
+    - {fileID: 11400000, guid: 9a085ad82f6c4654fb62fa7e9be02a7e, type: 2}
+    - {fileID: 11400000, guid: 29d561464f7066e42b11aad81853cadc, type: 2}
+    - {fileID: 11400000, guid: 7551561e60b86fc42afff306b3c54f28, type: 2}
+  - data:
+    - {fileID: 11400000, guid: fb77cc83048c6c043a9ddab55c86e6e2, type: 2}
+    - {fileID: 11400000, guid: 06f480eb8399ca242a4d9b1674382f90, type: 2}
+    - {fileID: 11400000, guid: 206610a845a10f74a80af4f8f306c1b0, type: 2}
+    - {fileID: 11400000, guid: 1b15f691c5210d34e869eefb326269d4, type: 2}
+  - data:
+    - {fileID: 11400000, guid: 5e6bda238cafacd41ac9b5d6824c061c, type: 2}
+    - {fileID: 11400000, guid: 1d854fbcf277ba24fbd5460d7947fd76, type: 2}
+    - {fileID: 11400000, guid: 7950215144d042545b8b61e71b1c25f5, type: 2}
+    - {fileID: 11400000, guid: 5f0ab84ae2aac5f479688bcf0897304c, type: 2}
+  - data:
+    - {fileID: 11400000, guid: 7f0c1c1d07e3def40ba9eea1d3efef45, type: 2}
+    - {fileID: 11400000, guid: e8e5f4cb6f9b1614891fb616d966a05b, type: 2}
+    - {fileID: 11400000, guid: b5a7b43ee132fe341b46f115909fc204, type: 2}
+    - {fileID: 11400000, guid: b58574982f37ae44887040ba2810e348, type: 2}
 --- !u!1 &760417724
 GameObject:
   m_ObjectHideFlags: 0

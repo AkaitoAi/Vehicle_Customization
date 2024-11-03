@@ -7,12 +7,21 @@ namespace AkaitoAi.Customization
     public class CustomizationHandler : MonoBehaviour
     {
         [SerializeField] private CustomizationUI[] customizationPanels;
+        [SerializeField] private CustomizationData[] customizationDatas;
+        private int currentSelectedIndex;
 
         [Serializable]
         public struct CustomizationUI
         {
             public GameObject panel;
             public Button[] buttons;
+            internal CustomizationSO customizationData;
+        }
+        
+        [Serializable]
+        public struct CustomizationData
+        {
+            public CustomizationSO[] data;
         }
 
         private void Start()
@@ -74,6 +83,40 @@ namespace AkaitoAi.Customization
                 
                 default: break;
             }
+        }
+
+        private void SetupCustomizationSO(int dataIndex)
+        {
+            currentSelectedIndex = dataIndex;
+            
+            if (dataIndex < customizationDatas.Length)
+            {
+                for (int i = 1; i < customizationPanels.Length; i++)
+                {
+                    if (i - 1 < customizationDatas[dataIndex].data.Length)
+                    {
+                        customizationPanels[i].customizationData = customizationDatas[dataIndex].data[i - 1];
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Not enough data in customizationDatas[{dataIndex}].data to assign to customizationPanels[{i}].");
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Invalid dataIndex provided for SetupCustomizationSO.");
+            }
+        }
+
+        private void OnEnable()
+        {
+            SelectionHandler.OnCurrentIndexUpdate += SetupCustomizationSO;
+        }
+
+        private void OnDisable()
+        {
+            SelectionHandler.OnCurrentIndexUpdate -= SetupCustomizationSO;
         }
     }
 }
