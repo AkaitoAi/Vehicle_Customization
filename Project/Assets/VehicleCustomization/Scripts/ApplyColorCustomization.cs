@@ -6,11 +6,7 @@ namespace AkaitoAi.Customization
     {
         [SerializeField] private MeshRenderer[] meshRenderers;
         [SerializeField] private Color[] colors;
-        private void Update()
-        {
-            Customize(CustomizationData.itemID);
-        }
-
+        
         protected override void Customize(int itemID)
         {
             if (!CanCustomize()) return;
@@ -37,7 +33,16 @@ namespace AkaitoAi.Customization
             {
                 meshRenderer.material.color = colors[itemID];
             }
+        }
+        
+        private void OnEnable()
+        {
+            CustomizationData.Actions.OnItemIDChanged += Customize;
+        }
 
+        private void OnDisable()
+        {
+            CustomizationData.Actions.OnItemIDChanged -= Customize;
         }
     }
 }

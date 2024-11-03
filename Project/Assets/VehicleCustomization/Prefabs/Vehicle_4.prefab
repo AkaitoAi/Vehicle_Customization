@@ -111,9 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  customizationData: {fileID: 11400000, guid: 5e6bda238cafacd41ac9b5d6824c061c, type: 2}
+  customizationData: {fileID: 11400000, guid: 7f0c1c1d07e3def40ba9eea1d3efef45, type: 2}
   meshRenderers:
-  - {fileID: 0}
+  - {fileID: 1401961555194026017}
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 6
-  customizationData: {fileID: 11400000, guid: 7950215144d042545b8b61e71b1c25f5, type: 2}
+  customizationData: {fileID: 11400000, guid: b5a7b43ee132fe341b46f115909fc204, type: 2}
   containerTransform: {fileID: 5851911291413392443}
 --- !u!1 &5851911291464262460
 GameObject:
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 7
-  customizationData: {fileID: 11400000, guid: 1d854fbcf277ba24fbd5460d7947fd76, type: 2}
+  customizationData: {fileID: 11400000, guid: e8e5f4cb6f9b1614891fb616d966a05b, type: 2}
   containerTransform: {fileID: 5851911292631541397}
 --- !u!1 &5851911292651717279
 GameObject:
@@ -2196,7 +2196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
-  customizationData: {fileID: 11400000, guid: 5f0ab84ae2aac5f479688bcf0897304c, type: 2}
+  customizationData: {fileID: 11400000, guid: b58574982f37ae44887040ba2810e348, type: 2}
   containerTransform: {fileID: 5851911292843696578}
 --- !u!1 &5851911292871586408
 GameObject:

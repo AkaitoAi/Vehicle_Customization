@@ -18,6 +18,7 @@ namespace AkaitoAi.Customization
     public struct Actions
     {
         public Action OnEntered;
+        public Action<int> OnItemIDChanged;
     }
 
     [Serializable]

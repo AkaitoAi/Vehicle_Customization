@@ -18,7 +18,6 @@ namespace AkaitoAi.Customization
 
             return true;
         }
-
         protected virtual void Customize(int itemID)
         {
 

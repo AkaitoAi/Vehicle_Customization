@@ -9,6 +9,7 @@ namespace AkaitoAi.Customization
         [SerializeField] private CustomizationUI[] customizationPanels;
         [SerializeField] private CustomizationData[] customizationDatas;
         private int currentSelectedIndex;
+        private CustomizationSO currenCustomizationSO;
 
         [Serializable]
         public struct CustomizationUI
@@ -70,22 +71,37 @@ namespace AkaitoAi.Customization
             {
                 case 0:
                     TogglePanel(1);
+                    currenCustomizationSO = customizationPanels[1].customizationData;
                     break;
                 
                 case 1: 
                     TogglePanel(2);
+                    currenCustomizationSO = customizationPanels[2].customizationData;
                     break;
                 
                 case 2: 
                     TogglePanel(3);
+                    currenCustomizationSO = customizationPanels[3].customizationData;
                     break;
                 
                 case 3: 
                     TogglePanel(4);
+                    currenCustomizationSO = customizationPanels[4].customizationData;
                     break;
                 
                 default: break;
             }
+        }
+
+        public void OnIndexButton(int index)
+        {
+            if(currenCustomizationSO == null) return;
+            
+            if(currenCustomizationSO.id != currentSelectedIndex) return;
+
+            currenCustomizationSO.itemID = index;
+            
+            currenCustomizationSO.Actions.OnItemIDChanged?.Invoke(index);
         }
 
         private void SetupCustomizationSO(int dataIndex)
@@ -99,6 +115,8 @@ namespace AkaitoAi.Customization
                     if (i - 1 < customizationDatas[dataIndex].data.Length)
                     {
                         customizationPanels[i].customizationData = customizationDatas[dataIndex].data[i - 1];
+
+                        customizationDatas[dataIndex].data[i - 1].Actions.OnItemIDChanged?.Invoke(0);
                     }
                     else
                     {

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace AkaitoAi.Customization
@@ -5,11 +6,6 @@ namespace AkaitoAi.Customization
     public class ApplyGameObjectToggleCustomization : Customization
     {
         [SerializeField] private Transform containerTransform;
-
-         private void Update()
-         {
-             Customize(CustomizationData.itemID);
-         }
 
         protected override void Customize(int itemID)
         {     
@@ -44,6 +40,16 @@ namespace AkaitoAi.Customization
                 GameObject wheel = wheelSlot.GetChild(i % typeCount).gameObject;
                 wheel.SetActive(i % typeCount == itemID);
             }
+        }
+
+        private void OnEnable()
+        {
+            CustomizationData.Actions.OnItemIDChanged += Customize;
+        }
+
+        private void OnDisable()
+        {
+            CustomizationData.Actions.OnItemIDChanged -= Customize;
         }
     }
 }
