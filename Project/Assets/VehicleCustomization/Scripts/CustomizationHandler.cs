@@ -58,12 +58,12 @@ namespace AkaitoAi.Customization
             {
                 Debug.Log($"Button {index} clicked!");
 
-                //if (currenCustomizationSO == null)
-                //{
-                //    OnSwitchPanelButton(index);
-                    
-                //    return; 
-                //}
+                if (currenCustomizationSO == null)
+                {
+                    OnSwitchPanelButton(index);
+
+                    return;
+                }
 
                 if (currenCustomizationSO != null)
                 {
@@ -77,6 +77,7 @@ namespace AkaitoAi.Customization
         public void OnBackButton()
         {
             TogglePanel(0);
+            currenCustomizationSO = null;
         }
 
         public void OnSwitchPanelButton(int index)
