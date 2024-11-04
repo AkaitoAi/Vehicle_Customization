@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402218, g: 0.49316543, b: 0.572232, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -205,19 +205,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 92908411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &92908411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,19 +982,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 382381013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &382381013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,19 +1452,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567071156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &567071156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,19 +1640,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649219596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &649219596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1949,19 +1901,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 688299121}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &688299121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2083,19 +2023,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 699599414}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &699599414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2481,19 +2409,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 840911520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &840911520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3256,19 +3172,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1217368497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1217368497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3390,19 +3294,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246627661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1246627661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4105,19 +3997,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1548624408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1548624408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4440,19 +4320,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1756317356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1756317356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,19 +4442,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1835373895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1835373895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4775,19 +4631,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865900261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1865900261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4989,19 +4833,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1978961813}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1978961813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,19 +5035,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1996167591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1996167591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5417,19 +5237,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043463328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 726801234}
-        m_TargetAssemblyTypeName: AkaitoAi.Customization.CustomizationHandler, Assembly-CSharp
-        m_MethodName: OnIndexButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2043463328
 MonoBehaviour:
   m_ObjectHideFlags: 0

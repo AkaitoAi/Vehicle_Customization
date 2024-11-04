@@ -57,6 +57,20 @@ namespace AkaitoAi.Customization
             void HandleButtonClick(int index)
             {
                 Debug.Log($"Button {index} clicked!");
+
+                //if (currenCustomizationSO == null)
+                //{
+                //    OnSwitchPanelButton(index);
+                    
+                //    return; 
+                //}
+
+                if (currenCustomizationSO != null)
+                {
+                    OnIndexButton(index);
+
+                    return;
+                }
             }
         }
 
