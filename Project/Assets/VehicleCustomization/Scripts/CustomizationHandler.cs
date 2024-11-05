@@ -114,9 +114,11 @@ namespace AkaitoAi.Customization
             
             if(currenCustomizationSO.id != currentSelectedIndex) return;
 
-            currenCustomizationSO.itemID = index;
-            
             currenCustomizationSO.Actions.OnItemIDChanged?.Invoke(index);
+
+            if (currenCustomizationSO.status[index].isUnlocked)
+                currenCustomizationSO.itemID = index;
+
         }
 
         private void SetupCustomizationSO(int dataIndex)
