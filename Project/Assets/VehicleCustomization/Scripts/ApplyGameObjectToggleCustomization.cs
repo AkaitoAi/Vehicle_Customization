@@ -20,7 +20,7 @@ namespace AkaitoAi.Customization
                 return;
             }
 
-            if (itemID >= CustomizationData.status.Length 
+            if (itemID >= CustomizationData.Status.Length 
                 || itemID < 0)
             {
                 Debug.Log("itemID is out of range.");
@@ -29,7 +29,7 @@ namespace AkaitoAi.Customization
             }
 
             int slotCount = containerTransform.childCount;
-            int typeCount = CustomizationData.status.Length;
+            int typeCount = CustomizationData.Status.Length;
             int totalItems = slotCount * typeCount;
 
             Transform wheelsTransform = containerTransform;

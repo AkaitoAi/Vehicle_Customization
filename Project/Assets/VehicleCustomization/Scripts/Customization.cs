@@ -14,7 +14,7 @@ namespace AkaitoAi.Customization
         {
             if (customizationData == null) return false;
 
-            if (customizationData.type != type) return false;
+            if (customizationData.Type != type) return false;
 
             return true;
         }
