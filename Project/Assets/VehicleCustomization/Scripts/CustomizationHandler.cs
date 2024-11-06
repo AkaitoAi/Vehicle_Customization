@@ -98,22 +98,22 @@ namespace AkaitoAi.Customization
                     TogglePanel(1);
                     currenCustomizationSO = customizationPanels[1].customizationData;
                     break;
-                
-                case 1: 
+
+                case 1:
                     TogglePanel(2);
                     currenCustomizationSO = customizationPanels[2].customizationData;
                     break;
-                
-                case 2: 
+
+                case 2:
                     TogglePanel(3);
                     currenCustomizationSO = customizationPanels[3].customizationData;
                     break;
-                
-                case 3: 
+
+                case 3:
                     TogglePanel(4);
                     currenCustomizationSO = customizationPanels[4].customizationData;
                     break;
-                
+
                 default: break;
             }
         }
