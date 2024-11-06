@@ -22,5 +22,10 @@ namespace AkaitoAi.Customization
         {
 
         }
+
+        public void ApplyCustomization()
+        {
+            Customize(customizationData.itemID);
+        }
     }
 }

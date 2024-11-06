@@ -7,6 +7,7 @@ namespace AkaitoAi.Customization
 {
     public class SelectionHandler : MonoBehaviour
     {
+        [SerializeField] private IntVariable index;
         [SerializeField] private GameObject[] objs;
         [SerializeField] private Button increment, decrement, loadSceneButton;
 
@@ -43,6 +44,8 @@ namespace AkaitoAi.Customization
             objs[currentIndex].SetActive(true);
 
             OnCurrentIndexUpdate?.Invoke(currentIndex);
+
+            index.value = currentIndex;
         }
 
         private void OnDecrementButton()
@@ -57,6 +60,8 @@ namespace AkaitoAi.Customization
             objs[currentIndex].SetActive(true);
 
             OnCurrentIndexUpdate?.Invoke(currentIndex);
+
+            index.value = currentIndex;
         }
     }
 }
