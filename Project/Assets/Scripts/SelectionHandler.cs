@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace AkaitoAi.Customization
 {
     public class SelectionHandler : MonoBehaviour
     {
         [SerializeField] private GameObject[] objs;
-        [SerializeField] private Button increment, decrement;
+        [SerializeField] private Button increment, decrement, loadSceneButton;
 
         private int currentIndex;
 
@@ -21,6 +22,7 @@ namespace AkaitoAi.Customization
             
             decrement.onClick.AddListener(OnDecrementButton);
             increment.onClick.AddListener(OnIncrementButton);
+            loadSceneButton.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
         }
 
         private void DisableAllObjs()
