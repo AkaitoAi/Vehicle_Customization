@@ -19,11 +19,11 @@ MonoBehaviour:
   - isUnlocked: 1
     price: 0
   - isUnlocked: 1
-    price: 0
+    price: 500
   - isUnlocked: 1
-    price: 0
+    price: 1000
   - isUnlocked: 1
-    price: 0
+    price: 1500
   Prefs:
     selected: SelectedCustomColor3
     unLocked: UnlockdCustomColor3
