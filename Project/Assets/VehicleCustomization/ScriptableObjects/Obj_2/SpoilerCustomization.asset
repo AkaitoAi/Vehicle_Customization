@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: SpoilerCustomization
   m_EditorClassIdentifier: 
   id: 1
-  type: 6
+  Type: 6
   itemID: 0
-  status:
+  Status:
   - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
   Prefs:
-    selected: SelectedCustomSpoiler
-    unLocked: UnlockdCustomSpoiler
+    selected: SelectedCustomSpoiler1
+    unLocked: UnlockdCustomSpoiler1

@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: FlagCustomization
   m_EditorClassIdentifier: 
   id: 0
-  type: 7
+  Type: 7
   itemID: 0
-  status:
+  Status:
   - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
-  - isUnlocked: 0
+  - isUnlocked: 1
     price: 0
   Prefs:
-    selected: SelectedCustomFlag
-    unLocked: UnlockdCustomFlag
+    selected: SelectedCustomFlag0
+    unLocked: UnlockdCustomFlag0

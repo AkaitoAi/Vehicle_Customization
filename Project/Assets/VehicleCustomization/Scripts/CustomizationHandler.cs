@@ -117,7 +117,10 @@ namespace AkaitoAi.Customization
             currenCustomizationSO.Actions.OnItemIDChanged?.Invoke(index);
 
             if (currenCustomizationSO.Status[index].isUnlocked)
+            {
                 currenCustomizationSO.itemID = index;
+                currenCustomizationSO.SaveSelected();
+            }
 
         }
 

@@ -33,13 +33,14 @@ namespace AkaitoAi.Customization
         }
 
         public int LoadSelected()
-        { 
+        {
             return PlayerPrefs.GetInt(Prefs.selected, itemID);
         }
         
         public int LoadUnlocked()
-        { 
+        {
             return PlayerPrefs.GetInt(Prefs.unLocked, itemID);
+
         }
     }
 }
