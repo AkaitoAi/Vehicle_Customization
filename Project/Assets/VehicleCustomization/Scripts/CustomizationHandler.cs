@@ -179,6 +179,7 @@ namespace AkaitoAi.Customization
                 coins.value -= currenCustomizationSO.Status[currentIndex].price;
                 currenCustomizationSO.itemID = currentIndex;
                 currenCustomizationSO.Status[currentIndex].isUnlocked = true;
+                
                 OnPriceChanged?.Invoke();
 
                 currenCustomizationSO.SaveSelected();
