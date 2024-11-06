@@ -20,6 +20,7 @@ namespace AkaitoAi.Customization
 
         private void OnEnable()
         {
+            LoadUnlocked();
             itemID = LoadSelected();
         }
 
@@ -27,6 +28,18 @@ namespace AkaitoAi.Customization
         {
             PlayerPrefs.SetInt(Prefs.selected, itemID);
         }
+
+        public void LoadUnlocked()
+        {
+            for (int i = 0; i < Status.Length; i++)
+            {
+                if (CheckUnlocked() == i)
+                {
+                    Status[i].isUnlocked = true;
+                }
+            }
+        }
+
         public void SaveUnlocked()
         {
             PlayerPrefs.SetInt(Prefs.unLocked, itemID);
@@ -37,10 +50,9 @@ namespace AkaitoAi.Customization
             return PlayerPrefs.GetInt(Prefs.selected, itemID);
         }
         
-        public int LoadUnlocked()
+        private int CheckUnlocked()
         {
             return PlayerPrefs.GetInt(Prefs.unLocked, itemID);
-
         }
     }
 }
