@@ -18,12 +18,12 @@ MonoBehaviour:
   Status:
   - isUnlocked: 1
     price: 0
-  - isUnlocked: 1
-    price: 0
-  - isUnlocked: 1
-    price: 0
-  - isUnlocked: 1
-    price: 0
+  - isUnlocked: 0
+    price: 500
+  - isUnlocked: 0
+    price: 1000
+  - isUnlocked: 0
+    price: 1500
   Prefs:
     selected: SelectedCustomWheel3
     unLocked: UnlockdCustomWheel3

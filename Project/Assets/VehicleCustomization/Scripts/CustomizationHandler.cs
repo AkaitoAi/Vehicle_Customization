@@ -6,10 +6,15 @@ namespace AkaitoAi.Customization
 {
     public class CustomizationHandler : MonoBehaviour
     {
+        [SerializeField] private Button buyButton;
+        [SerializeField] private Text priceText;
+        [SerializeField] private IntVariable coins;
+
         [SerializeField] private CustomizationUI[] customizationPanels;
         [SerializeField] private CustomizationData[] customizationDatas;
         private int currentSelectedIndex;
         private CustomizationSO currenCustomizationSO;
+        private int currentIndex;
 
         [Serializable]
         public struct CustomizationUI
@@ -25,9 +30,13 @@ namespace AkaitoAi.Customization
             public CustomizationSO[] data;
         }
 
+        public static event Action OnPriceChanged;
+
         private void Start()
         {
             AddIndexToButtons();
+
+            buyButton.gameObject.SetActive(false);
 
             TogglePanel(0);
         }
@@ -80,7 +89,7 @@ namespace AkaitoAi.Customization
             currenCustomizationSO = null;
         }
 
-        public void OnSwitchPanelButton(int index)
+        private void OnSwitchPanelButton(int index)
         {
             switch (index)
             {
@@ -88,38 +97,50 @@ namespace AkaitoAi.Customization
                     TogglePanel(1);
                     currenCustomizationSO = customizationPanels[1].customizationData;
                     break;
-                
-                case 1: 
+
+                case 1:
                     TogglePanel(2);
                     currenCustomizationSO = customizationPanels[2].customizationData;
                     break;
-                
-                case 2: 
+
+                case 2:
                     TogglePanel(3);
                     currenCustomizationSO = customizationPanels[3].customizationData;
                     break;
-                
-                case 3: 
+
+                case 3:
                     TogglePanel(4);
                     currenCustomizationSO = customizationPanels[4].customizationData;
                     break;
-                
+
                 default: break;
             }
         }
 
-        public void OnIndexButton(int index)
+        private void OnIndexButton(int index)
         {
             if(currenCustomizationSO == null) return;
             
             if(currenCustomizationSO.id != currentSelectedIndex) return;
 
-            currenCustomizationSO.Actions.OnItemIDChanged?.Invoke(index);
+            currentIndex = index;
 
-            if (currenCustomizationSO.Status[index].isUnlocked)
+            currenCustomizationSO.Actions.OnItemIDChanged?.Invoke(currentIndex);
+
+            if (currenCustomizationSO.Status[currentIndex].isUnlocked)
             {
-                currenCustomizationSO.itemID = index;
+                currenCustomizationSO.itemID = currentIndex;
                 currenCustomizationSO.SaveSelected();
+
+                buyButton.gameObject.SetActive(false);
+                buyButton.onClick.RemoveAllListeners();
+            }
+            else
+            {
+                buyButton.gameObject.SetActive(true);
+                priceText.text = currenCustomizationSO.Status[currentIndex].price.ToString();
+
+                buyButton.onClick.AddListener(OnBuyButton);
             }
 
         }
@@ -148,6 +169,22 @@ namespace AkaitoAi.Customization
             else
             {
                 Debug.LogWarning("Invalid dataIndex provided for SetupCustomizationSO.");
+            }
+        }
+        private void OnBuyButton()
+        { 
+            if(coins.value >= currenCustomizationSO.Status[currentIndex].price)
+            {
+                coins.value -= currenCustomizationSO.Status[currentIndex].price;
+                currenCustomizationSO.itemID = currentIndex;
+                currenCustomizationSO.Status[currentIndex].isUnlocked = true;
+                
+                OnPriceChanged?.Invoke();
+
+                currenCustomizationSO.SaveSelected();
+
+                buyButton.gameObject.SetActive(false);
+                buyButton.onClick.RemoveAllListeners();
             }
         }
 
