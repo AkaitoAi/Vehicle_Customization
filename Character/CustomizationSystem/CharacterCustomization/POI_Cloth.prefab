@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5108071399832220961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7463675988645686352}
+  m_Layer: 0
+  m_Name: StandPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7463675988645686352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5108071399832220961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2984534415209237607}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6552699380454282475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2984534415209237607}
+  - component: {fileID: 4780774257795853687}
+  - component: {fileID: 7731228042008884555}
+  m_Layer: 0
+  m_Name: POI_Cloth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2984534415209237607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552699380454282475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -116.48302, y: 2.7201, z: 309.179}
+  m_LocalScale: {x: 0.7668667, y: 0.66150296, z: 0.7668668}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7463675988645686352}
+  - {fileID: 4838717908817858556}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4780774257795853687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552699380454282475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7731228042008884555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552699380454282475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebdc86ae7ac102458af2174afcd06f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterCustomizationButton: {fileID: 0}
+  exitCustomizationButton: {fileID: 0}
+  standPosition: {fileID: 7463675988645686352}
+  animToEnter: ClothChangeEnter
+  animToExit: ClothChangeExit
+  setupDelay: 0.75
+  toHide:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8596828824639843673}
+  toShow:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!1001 &5058310511145584907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2984534415209237607}
+    m_Modifications:
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3565910652835472466, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_Name
+      value: ClothCustomizationPOI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3565910652835472466, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+--- !u!4 &4838717908817858556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 365968945831593719, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+  m_PrefabInstance: {fileID: 5058310511145584907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8596828824639843673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3565910652835472466, guid: f749e37b7e588e64790ce89bb7cb7521, type: 3}
+  m_PrefabInstance: {fileID: 5058310511145584907}
+  m_PrefabAsset: {fileID: 0}
